@@ -1,15 +1,8 @@
-local repo = 'https://raw.githubusercontent.com/mstudio45/LinoriaLib/main/'
+local Repository = "https://raw.githubusercontent.com/RectangularObject/LinoriaLib/main/"
 
-local Library = loadstring(game:HttpGet(repo .. 'Library.lua'))()
-local ThemeManager = loadstring(game:HttpGet(repo .. 'addons/ThemeManager.lua'))()
-local SaveManager = loadstring(game:HttpGet(repo .. 'addons/SaveManager.lua'))()
-local Options = Library.Options
-local Toggles = Library.Toggles
-
-Library.ShowToggleFrameInKeybinds = true -- Make toggle keybinds work inside the keybinds UI (aka adds a toggle to the UI). Good for mobile users (Default value = true)
-Library.ShowCustomCursor = true -- Toggles the Linoria cursor globaly (Default value = true)
-Library.NotifySide = "Left" -- Changes the side of the notifications globaly (Left, Right) (Default value = Left)
-
+local Library = loadstring(game:HttpGet(Repository .. "Library.lua"))()
+local ThemeManager = loadstring(game:HttpGet(Repository .. "addons/ThemeManager.lua"))()
+local SaveManager = loadstring(game:HttpGet(Repository .. "addons/SaveManager.lua"))()
 
 -- Сначала определяем ESP переменные из оригинального скрипта
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
